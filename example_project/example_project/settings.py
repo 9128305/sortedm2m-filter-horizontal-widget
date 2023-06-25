@@ -53,9 +53,6 @@ MIDDLEWARE = [
 ]
 
 import django
-if django.VERSION < (1, 10):
-    MIDDLEWARE_CLASSES = MIDDLEWARE
-
 ROOT_URLCONF = 'example_project.urls'
 
 TEMPLATES = [
@@ -116,7 +113,6 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
 
 USE_TZ = True
 
